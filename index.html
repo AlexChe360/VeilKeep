@@ -1,170 +1,305 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="color-scheme" content="light dark" />
+  <meta charset="UTF-8">
   <title>VeilKeep — Privacy Policy</title>
-  <!-- Tailwind CSS (CDN) -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: { extend: { colors: { ink: { 50: '#f7f7f8', 900: '#0b0b0c' } } } }
-    }
-  </script>
-  <style>
-    @media print {
-      .no-print {
-        display: none !important;
-      }
-
-      body {
-        color: #000;
-      }
-
-      a {
-        text-decoration: underline;
-        color: #000;
-      }
-
-      .container {
-        max-width: none;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<body style="font-family:-apple-system,BlinkMacSystemFont,system-ui,Segoe UI,Roboto,sans-serif; line-height:1.6; color:#111827; padding:16px; max-width:900px; margin:0 auto;">
 
-<body class="bg-white text-ink-900 dark:bg-ink-900 dark:text-white antialiased">
-  <header
-    class="border-b border-black/5 dark:border-white/10 bg-white/70 dark:bg-ink-900/70 backdrop-blur sticky top-0 z-10">
-    <div class="container mx-auto max-w-4xl px-4 py-4 flex items-center justify-between">
-      <h1 class="text-xl font-semibold tracking-tight">VeilKeep — Privacy Policy</h1>
-    </div>
-  </header>
+  <h1>VeilKeep — Privacy Policy</h1>
+  <p><strong>Last updated:</strong> October 6, 2025</p>
 
-  <main class="container mx-auto max-w-4xl px-4 py-10">
-    <p class="text-sm opacity-70 mb-2">Last updated: <time datetime="2025-10-06">October 6, 2025</time></p>
+  <h2>At a glance</h2>
+  <ul>
+    <li>Sign-in uses <strong>Sign in with Apple</strong> only (authentication and account identification).</li>
+    <li>All note content, checklists, and attachments are stored <strong>locally on your device</strong> and <strong>encrypted</strong>. The encryption key stays on your device; we do not have access to it.</li>
+    <li>We do <strong>not</strong> use advertising trackers or third-party analytics SDKs.</li>
+    <li>We may use <strong>notifications</strong> (if you allow them) to remind you about app-related events.</li>
+  </ul>
 
-    <!-- At a glance (exactly mirrors RU summary) -->
-    <div class="mb-8 rounded-2xl border border-black/10 dark:border-white/10 p-5 bg-black/[0.03] dark:bg-white/[0.03]">
-      <h2 class="text-base font-semibold mb-2">At a glance</h2>
-      <ul class="list-disc pl-5 space-y-1">
-        <li>Sign‑in uses the third‑party service <strong>Supabase</strong> (<em>authentication only</em>).</li>
-        <li>All note content, checklists, and attachments are stored <strong>locally on your device</strong> and
-          encrypted. The encryption key is kept locally; we do not have access to it.</li>
-        <li>We do <strong>not</strong> use advertising trackers or third‑party analytics SDKs.</li>
-      </ul>
-    </div>
+  <h2>1) Who we are</h2>
+  <p>
+    VeilKeep (the “App”, “we”, “us”, “our”).<br>
+    VeilKeep is developed and published by an independent developer. Developer contact details are provided in the
+    <a href="#contact-us">Contact us</a> section below.
+  </p>
 
-    <section class="prose prose-neutral dark:prose-invert max-w-none">
-      <h2>1) Who we are</h2>
-      <p><strong>VeilKeep</strong> (the “App”, “we”, “us”, “our”). Developer contact is in the <a
-          href="#contact">Contact us</a> section.</p>
-      <br />
-      <h2>2) Data we process</h2>
-      <h3>2.1 Authentication (via Supabase)</h3>
+  <h2>2) Data we process</h2>
+
+  <h3>2.1 Authentication (Sign in with Apple)</h3>
+  <p>
+    VeilKeep uses <strong>Sign in with Apple</strong> as its authentication method.
+  </p>
+  <p>When you sign in with Apple, Apple provides the App with:</p>
+  <ul>
+    <li>A stable <strong>user identifier</strong> specific to VeilKeep.</li>
+    <li>Your <strong>email address</strong>, which can be either your real email or a private relay email, depending on what you choose during sign-in.</li>
+    <li>Authentication tokens required to keep you signed in.</li>
+  </ul>
+  <p>
+    We <strong>do not</strong> receive your Apple ID password. Sign in with Apple is fully handled by Apple; VeilKeep only
+    receives the minimum information needed to:
+  </p>
+  <ul>
+    <li>Create and recognize your VeilKeep account on this device,</li>
+    <li>Keep you signed in,</li>
+    <li>Associate purchases or features with your Apple identity where applicable.</li>
+  </ul>
+  <p>
+    We do not run a separate username/password system on our own servers.
+  </p>
+
+  <h3>2.2 On-device data (local)</h3>
+  <p>
+    VeilKeep is designed so that your note content stays on your device.
+  </p>
+  <p>We store locally on your device:</p>
+  <ul>
+    <li>Notes and checklists,</li>
+    <li>Attachments (for example, files or other content you add),</li>
+    <li>Encryption keys and metadata needed for secure offline storage,</li>
+    <li>App settings and preferences (e.g., theme, lock options, etc.).</li>
+  </ul>
+  <p>
+    This data <strong>does not leave your device</strong> unless you explicitly choose to:
+  </p>
+  <ul>
+    <li>Export or share notes/attachments via the system share sheet or similar, or</li>
+    <li>Include the App’s data in device backups that you control (for example, iOS backups).</li>
+  </ul>
+  <p>
+    We <strong>cannot decrypt your notes</strong>: the encryption key is stored only on your device and is never sent to us
+    or to Apple as part of VeilKeep.
+  </p>
+
+  <h3>2.3 Notifications data</h3>
+  <p>
+    If you allow <strong>notifications</strong>, VeilKeep may process:
+  </p>
+  <ul>
+    <li>Simple reminder or status information needed to show notifications (for example, that a reminder should be displayed at a certain time).</li>
+  </ul>
+  <p>
+    Notification content is derived from your local app data and processed on your device. We do <strong>not</strong> upload
+    your note content to our own servers for the purpose of notifications.
+  </p>
+  <p>
+    You can control notification settings in your device settings (see <a href="#device-permissions">Device permissions</a> below).
+  </p>
+
+  <h3>2.4 Diagnostics and logs</h3>
+  <p>
+    By default, VeilKeep does <strong>not</strong> include in-app analytics or behavioral tracking.
+  </p>
+  <p>
+    However, your device and the app store provider (for example, Apple) may collect <strong>optional crash reports and diagnostics</strong>,
+    if you opt in at the system level. These may include:
+  </p>
+  <ul>
+    <li>Device model,</li>
+    <li>Operating system version,</li>
+    <li>App version,</li>
+    <li>Technical information about a crash or error.</li>
+  </ul>
+  <p>
+    We may access this data in aggregate to:
+  </p>
+  <ul>
+    <li>Improve app stability,</li>
+    <li>Diagnose problems,</li>
+    <li>Make future compatibility decisions.</li>
+  </ul>
+  <p>
+    You can control whether to share such diagnostics in your device’s privacy/analytics settings.
+  </p>
+
+  <h2>3) Purposes &amp; legal bases</h2>
+  <p>
+    Where applicable (e.g., under GDPR), our legal bases for processing are:
+  </p>
+  <ul>
+    <li>
+      <strong>Contract performance</strong><br>
+      To provide sign-in with Apple and maintain your session.<br>
+      To operate VeilKeep’s core functionality (encrypted local notes).
+    </li>
+    <li>
+      <strong>Legitimate interests</strong><br>
+      To ensure security and prevent abuse.<br>
+      To maintain and improve app stability and performance using limited technical diagnostics.
+    </li>
+    <li>
+      <strong>Consent</strong><br>
+      For notifications, if you allow them in system settings.<br>
+      For OS-level diagnostics/crash sharing, where governed by your device settings.
+    </li>
+  </ul>
+  <p>
+    You may withdraw your consent to optional permissions at any time through your device settings.
+  </p>
+
+  <h2>4) Storage &amp; retention</h2>
+  <ul>
+    <li><strong>Auth tokens</strong> from Sign in with Apple may be stored in secure device storage (e.g., Keychain) and are removed when you sign out or delete the App.</li>
+    <li><strong>Local notes, checklists, and attachments</strong> remain on your device for as long as you keep them in the App or until you delete the App and its data.</li>
+    <li><strong>Notification schedules and related metadata</strong> are kept locally as long as needed for notifications to function, or until you disable them or delete the App.</li>
+    <li>Any OS-level crash/diagnostic data is managed by Apple according to their own policies.</li>
+  </ul>
+  <p>
+    VeilKeep does not maintain a separate remote database of your note content.
+  </p>
+
+  <h2>5) Where processing occurs</h2>
+  <ul>
+    <li>Your note content, encryption keys, and notification data are processed <strong>on your device</strong>.</li>
+    <li>Authentication data is processed by <strong>Apple</strong> when you use Sign in with Apple.</li>
+    <li>Any OS-level backups or analytics are processed by Apple under its own terms.</li>
+  </ul>
+
+  <h2>6) Sharing with third parties</h2>
+  <ul>
+    <li>We do <strong>not sell</strong> your personal data.</li>
+    <li>We do <strong>not</strong> use third-party advertising SDKs or trackers in VeilKeep.</li>
+    <li>Apple acts as:
       <ul>
-        <li><strong>Email address</strong> and/or other identifier used to sign in.</li>
-        <li><strong>Authentication tokens</strong> required to maintain your session.</li>
+        <li>the identity provider for Sign in with Apple, and</li>
+        <li>the platform provider (iOS, App Store, backup and analytics infrastructure).</li>
       </ul>
-      <p>These items are processed by <strong>Supabase</strong> solely to provide the sign‑in function. We do not store
-        your password.</p>
+    </li>
+    <li>Data may be disclosed if required by law (e.g., a valid court order) and only to the extent legally required.</li>
+  </ul>
+  <p>
+    We do <strong>not</strong> share your encrypted note content with any third party.
+  </p>
 
-      <h3>2.2 On‑device data (local)</h3>
-      <ul>
-        <li><strong>Notes and attachments</strong> (e.g., photos, documents, scans).</li>
-        <li><strong>Encryption keys and metadata</strong> needed for offline storage.</li>
-      </ul>
-      <p>This data <strong>does not leave your device</strong> unless you choose to export/share it.</p>
+  <h2>7) Security</h2>
+  <p>
+    We take reasonable measures to protect the limited data processed through VeilKeep:
+  </p>
+  <ul>
+    <li>Notes and attachments are <strong>encrypted locally</strong>, with keys stored only on your device.</li>
+    <li>Authentication tokens and sensitive items are stored in secure device storage where available.</li>
+    <li>We minimize the amount of data sent outside the device and rely primarily on on-device processing.</li>
+  </ul>
+  <p>
+    No system can be perfectly secure. You are responsible for maintaining the security of your device
+    (for example, by using a passcode and not sharing your Apple ID credentials).
+  </p>
 
-      <h3>2.3 Diagnostics and logs</h3>
-      <p>By default, we do <strong>not</strong> collect analytics. Optional OS/app‑store crash reports may be sent if
-        you enabled them on your device and can include anonymous technical information (device model, OS version,
-        etc.).</p>
-      <br />
-      <h2>3) Purposes & legal bases</h2>
-      <ul>
-        <li><strong>Contract performance</strong>: provide sign‑in and maintain sessions (via Supabase).</li>
-        <li><strong>Legitimate interests</strong>: security, abuse prevention, stability (limited diagnostics).</li>
-        <li><strong>Consent</strong>: any optional device permissions/features you explicitly enable.</li>
-      </ul>
-      <br />
-      <h2>4) Storage & retention</h2>
-      <ul>
-        <li><strong>Auth tokens</strong> may be stored in secure device storage (e.g., Keychain/Keystore) and are
-          removed on sign‑out or app deletion.</li>
-        <li><strong>Notes data</strong> remains locally for as long as you keep it in the App.</li>
-        <li><strong>Supabase account data</strong> (e.g., your email) is retained until you delete the account.</li>
-      </ul>
-      <br />
-      <h2>5) Where processing occurs</h2>
-      <p>Authentication is handled by <strong>Supabase</strong> on its infrastructure. The project region is defined by
-        our Supabase configuration and may be outside your country. The active region will be disclosed in the App
-        and/or on our website.</p>
-      <br />
-      <h2>6) Sharing with third parties</h2>
-      <ul>
-        <li>We do <strong>not sell</strong> your personal data.</li>
-        <li>Supabase acts as our <strong>processor</strong> for sign‑in only and processes data on our behalf.</li>
-        <li>Data may be disclosed if required by law (e.g., a valid court order) and only to the legally required
-          extent.</li>
-      </ul>
-      <br />
-      <h2>7) Security</h2>
-      <ul>
-        <li>Your notes are <strong>encrypted locally</strong>; the key stays <strong>on your device</strong> and is
-          never sent to us.</li>
-        <li>Auth tokens and other sensitive items are stored in secure device storage where available.</li>
-        <li>We apply organizational and technical measures for the limited data we control (e.g., Supabase project
-          security).</li>
-      </ul>
-      <br />
-      <h2>8) Your rights</h2>
-      <p>Depending on your jurisdiction, you may have rights to access, rectify, delete, restrict, object, port your
-        data, and withdraw consent (where applicable). For account data (e.g., email in Supabase), please contact us.
-        For local notes, use the App’s features (e.g., delete/clear). Note: we <strong>cannot decrypt</strong> your
-        notes and do not have access to them.</p>
-      <br />
-      <h2>9) Children</h2>
-      <p>The App is not intended for individuals under 13 (or another age set by local law). We do not knowingly collect
-        data from such users.</p>
-      <br />
-      <h2 id="contact">10) Contact us</h2>
-      <ul>
-        <li><strong>Email:</strong> <a href="mailto:devalexmob360@gmail.com">devalexmob360@gmail.com</a></li>
-        <li><strong>Developer:</strong> VeilKeep</li>
-      </ul>
-      <br />
-      <h2>11) Changes to this Policy</h2>
-      <p>We may update this Policy from time to time. The new version takes effect upon publication in the App and/or on
-        the website. See the “Last updated” date above.</p>
-      <br />
-      <h2>Account deletion (Supabase)</h2>
-      <p>You can request deletion of your account (email and related records in Supabase). Email us from the address
-        linked to your account with the subject “Delete my VeilKeep account”. After deletion, sign‑in will no longer be
-        possible. Your local notes remain on your device until you delete them.</p>
-      <br />
-      <h2>Device permissions</h2>
-      <ul>
-        <li><strong>Camera/Photos/Files</strong> — to add attachments to notes (data remains local).</li>
-        <li><strong>Biometrics (Face ID/Touch ID)</strong> — for quick, secure access to the local vault (optional).
-        </li>
-      </ul>
-      <p>You can revoke permissions in device settings; some features may stop working.</p>
-    </section>
+  <h2>8) Your rights</h2>
+  <p>
+    Depending on your jurisdiction, you may have rights to:
+  </p>
+  <ul>
+    <li>Access your personal data,</li>
+    <li>Correct inaccurate data,</li>
+    <li>Request deletion of data (“right to be forgotten”),</li>
+    <li>Restrict or object to certain kinds of processing,</li>
+    <li>Data portability (where applicable),</li>
+    <li>Withdraw consent where processing is based on consent.</li>
+  </ul>
+  <p>
+    In practice:
+  </p>
+  <ul>
+    <li>
+      <strong>Local notes and attachments</strong><br>
+      You can manage and delete them directly inside VeilKeep or by deleting the App and its data from your device.
+      We cannot decrypt or remotely access your notes.
+    </li>
+    <li>
+      <strong>Sign in with Apple data</strong><br>
+      You can manage app access in your Apple ID settings (e.g., revoke Sign in with Apple for VeilKeep).
+    </li>
+  </ul>
+  <p>
+    Because much of the relevant data is controlled by Apple (Apple ID, iOS diagnostics, backups), some actions must be performed using Apple’s tools and settings.
+    If you have questions or requests related specifically to VeilKeep, please contact us (see below).
+  </p>
 
-    <div class="mt-10 flex items-center gap-3 text-sm text-black/60 dark:text-white/60">
-      <span>© <span id="y"></span> VeilKeep</span>
-    </div>
+  <h2>9) Children</h2>
+  <p>
+    VeilKeep is <strong>not intended for individuals under 13</strong> (or another age defined by local law in your jurisdiction).
+    We do not knowingly collect data from such users.
+  </p>
+  <p>
+    If you believe that a child under the relevant age has used VeilKeep and provided data in a way that we control, please contact us so that we can take appropriate action.
+  </p>
 
-  </main>
+  <h2 id="contact-us">10) Contact us</h2>
+  <p>
+    If you have any questions about this Privacy Policy or how VeilKeep handles your data, please contact:
+  </p>
+  <ul>
+    <li><strong>Email:</strong> <a href="mailto:devalexmob360@gmail.com">devalexmob360@gmail.com</a></li>
+    <li><strong>Developer:</strong> VeilKeep</li>
+  </ul>
+  <p>
+    Please include enough detail for us to understand your request (for example, that it concerns VeilKeep).
+  </p>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <h2>11) Changes to this Policy</h2>
+  <p>
+    We may update this Policy from time to time. When we do:
+  </p>
+  <ul>
+    <li>The updated version will be made available in the App and/or on our website, and</li>
+    <li>The “Last updated” date at the top will indicate when the changes took effect.</li>
+  </ul>
+  <p>
+    Your continued use of VeilKeep after an updated Policy takes effect means that you accept the changes.
+  </p>
+
+  <h2>12) Account deletion and Sign in with Apple</h2>
+  <p>
+    VeilKeep does not maintain a separate remote account database; your identity in the App is tied to
+    <strong>Sign in with Apple</strong>.
+  </p>
+  <p>
+    To effectively “delete your account” in the context of VeilKeep, you can:
+  </p>
+  <ol>
+    <li>
+      <strong>Revoke Sign in with Apple access</strong> for VeilKeep in your Apple ID settings:
+      <ul>
+        <li>On your device, go to <em>Settings → [your name] → Password &amp; Security → Apps Using Your Apple ID</em>,</li>
+        <li>Select VeilKeep and choose to stop using Apple ID with this app.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Delete local data</strong>:
+      <ul>
+        <li>Delete your notes and attachments directly in the App, or</li>
+        <li>Delete the VeilKeep app from your device (which typically removes its local data).</li>
+      </ul>
+    </li>
+  </ol>
+  <p>
+    If you have additional questions about account-related data, you can contact us by email.
+  </p>
+
+  <h2 id="device-permissions">13) Device permissions</h2>
+  <p>
+    VeilKeep may request the following permission:
+  </p>
+  <ul>
+    <li>
+      <strong>Notifications (Push / Local Notifications)</strong> – to send you app-related alerts, such as reminders or status
+      updates related to your content or app activity.
+    </li>
+  </ul>
+  <p>
+    Details:
+  </p>
+  <ul>
+    <li>Notification content is generated from your local app data and processed on your device.</li>
+    <li>We do <strong>not</strong> send your encrypted note content to our own servers for the purpose of notifications.</li>
+  </ul>
+  <p>
+    You can revoke notification permissions at any time in your device settings. If you do so, VeilKeep will remain usable,
+    but certain features (such as reminders or alerts) may no longer function as intended.
+  </p>
 
 </body>
-
 </html>
