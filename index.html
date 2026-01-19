@@ -16,6 +16,8 @@
     <li>All note content, checklists, and attachments are stored <strong>locally on your device</strong> and <strong>encrypted</strong>. The encryption key stays on your device; we do not have access to it.</li>
     <li>We do <strong>not</strong> use advertising trackers or third-party analytics SDKs.</li>
     <li>We may use <strong>notifications</strong> (if you allow them) to remind you about app-related events.</li>
+    <li>You can optionally share a note via a link. Shared content is encrypted on your device with an access code you choose. We do not receive the access code.</li>
+    <li>Shared items are stored temporarily on our server in encrypted form only and are automatically deleted after they expire or reach the maximum number of opens.</li>
   </ul>
 
   <h2>1) Who we are</h2>
@@ -73,7 +75,41 @@
     or to Apple as part of VeilKeep.
   </p>
 
-  <h3>2.3 Notifications data</h3>
+  <h3>2.3 Shared links (optional)</h3>
+  <p>
+    VeilKeep includes an optional feature that lets you share a note via a link.
+  </p>
+  <p>
+    When you create a shared link:
+  </p>
+  <ul>
+    <li>The note (or a snapshot of the note) is encrypted <strong>on your device</strong> before upload using an <strong>access code</strong> you choose.</li>
+    <li>We receive and store only the encrypted payload and limited metadata necessary to operate the sharing feature, such as:
+      <ul>
+        <li>a share token (link identifier),</li>
+        <li>an expiration time (validity period / TTL) and maximum number of opens (view limit),</li>
+        <li>optional non-sensitive metadata such as a note title (if you choose to include it).</li>
+      </ul>
+    </li>
+  </ul>
+  <p>
+    We <strong>do not receive</strong> the access code and <strong>cannot decrypt</strong> the shared content. The access code is never sent to us.
+  </p>
+  <p>
+    When someone opens the link:
+  </p>
+  <ul>
+    <li>They must enter the access code to decrypt the content.</li>
+    <li>Decryption happens <strong>locally on the recipient’s device</strong>.</li>
+  </ul>
+  <p>
+    Retention and deletion:
+  </p>
+  <ul>
+    <li>Encrypted shared payloads are stored temporarily and are automatically deleted when the link expires or the maximum number of opens is reached (whichever comes first).</li>
+  </ul>
+
+  <h3>2.4 Notifications data</h3>
   <p>
     If you allow <strong>notifications</strong>, VeilKeep may process:
   </p>
@@ -88,7 +124,7 @@
     You can control notification settings in your device settings (see <a href="#device-permissions">Device permissions</a> below).
   </p>
 
-  <h3>2.4 Diagnostics and logs</h3>
+  <h3>2.5 Diagnostics and logs</h3>
   <p>
     By default, VeilKeep does <strong>not</strong> include in-app analytics or behavioral tracking.
   </p>
@@ -122,7 +158,8 @@
     <li>
       <strong>Contract performance</strong><br>
       To provide sign-in with Apple and maintain your session.<br>
-      To operate VeilKeep’s core functionality (encrypted local notes).
+      To operate VeilKeep’s core functionality (encrypted local notes).<br>
+      To provide the optional shared links feature when you choose to use it.
     </li>
     <li>
       <strong>Legitimate interests</strong><br>
@@ -144,6 +181,7 @@
     <li><strong>Auth tokens</strong> from Sign in with Apple may be stored in secure device storage (e.g., Keychain) and are removed when you sign out or delete the App.</li>
     <li><strong>Local notes, checklists, and attachments</strong> remain on your device for as long as you keep them in the App or until you delete the App and its data.</li>
     <li><strong>Notification schedules and related metadata</strong> are kept locally as long as needed for notifications to function, or until you disable them or delete the App.</li>
+    <li><strong>Shared links</strong>: encrypted share payloads are retained only for the configured validity period and/or until the maximum number of opens is reached, and are then automatically deleted from our server.</li>
     <li>Any OS-level crash/diagnostic data is managed by Apple according to their own policies.</li>
   </ul>
   <p>
@@ -153,6 +191,7 @@
   <h2>5) Where processing occurs</h2>
   <ul>
     <li>Your note content, encryption keys, and notification data are processed <strong>on your device</strong>.</li>
+    <li>Shared link content is encrypted on your device and stored temporarily on our server in encrypted form only to deliver it to recipients.</li>
     <li>Authentication data is processed by <strong>Apple</strong> when you use Sign in with Apple.</li>
     <li>Any OS-level backups or analytics are processed by Apple under its own terms.</li>
   </ul>
@@ -167,6 +206,7 @@
         <li>the platform provider (iOS, App Store, backup and analytics infrastructure).</li>
       </ul>
     </li>
+    <li>For the shared links feature, we store encrypted payloads on our own infrastructure solely to deliver them to recipients.</li>
     <li>Data may be disclosed if required by law (e.g., a valid court order) and only to the extent legally required.</li>
   </ul>
   <p>
@@ -179,6 +219,7 @@
   </p>
   <ul>
     <li>Notes and attachments are <strong>encrypted locally</strong>, with keys stored only on your device.</li>
+    <li>Shared links store only encrypted payloads on our servers; we do not have the access code and cannot decrypt shared content.</li>
     <li>Authentication tokens and sensitive items are stored in secure device storage where available.</li>
     <li>We minimize the amount of data sent outside the device and rely primarily on on-device processing.</li>
   </ul>
@@ -207,6 +248,11 @@
       <strong>Local notes and attachments</strong><br>
       You can manage and delete them directly inside VeilKeep or by deleting the App and its data from your device.
       We cannot decrypt or remotely access your notes.
+    </li>
+    <li>
+      <strong>Shared links</strong><br>
+      You can stop sharing by deleting the shared item in the App (where available) or by waiting for it to expire / reach its maximum opens.
+      Shared payloads are encrypted and automatically deleted after expiry or view limit.
     </li>
     <li>
       <strong>Sign in with Apple data</strong><br>
